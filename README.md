@@ -40,7 +40,7 @@ The 8-bit Up/Down Counter is designed with the following port interfaces and fun
 
 **3. Architecture Block Diagram:**
 <p align="center">
-  <img src=" KÉO THẢ ẢNH SƠ ĐỒ KHỐI VÀO ĐÂY " alt="8-bit Up/Down Counter Architecture">
+  <img src="./images/8-Bit-Up-Down-Counter.drawio.png" alt="8-bit Up/Down Counter Architecture">
 </p>
 
 ### 🦉 The Process
@@ -74,17 +74,17 @@ Running the automated Makefile swept through all directed scenarios, achieving 1
 
 1. **Simulation Regression Log**
 <p align="center">
-  <img src=" KÉO THẢ ẢNH LOG VÀO ĐÂY " alt="Terminal Log">
+  <img src="./images/waveform.png" alt="Terminal Log">
 </p>
 
 2. **Regression Test Report**
 <p align="center">
-  <img src=" KÉO THẢ ẢNH REPORT VÀO ĐÂY " alt="Regression Report">
+  <img src="./images/vplan_result.png" alt="Regression Report">
 </p>
 
 3. **Code Coverage Report (100%)**
 <p align="center">
-  <img src=" KÉO THẢ ẢNH COVERAGE VÀO ĐÂY " alt="Coverage Report">
+  <img src="./images/coverage.png" alt="Coverage Report">
 </p>
 
 ### 💭 How can it be improved?
