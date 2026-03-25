@@ -1,5 +1,5 @@
 #Define variables
-TESTNAME 	?= test_all_zeros
+TESTNAME 	?= test_reset_behavior
 TB_NAME 	?= test_bench
 RADIX		?= decimal
 REGRESS_LIST	?= pat.list
@@ -16,13 +16,13 @@ drc:
 
 build:
 	mkdir -p log
-	cp -rf ../testcases/$(TESTNAME).v run_test.v
+	cp -rf ../testcases/$(TESTNAME).sv run_test.sv
 	vlib work
 	vmap work work
 	vlog  -f compile.f | tee compile.log
 build_cov:
 	mkdir -p log
-	cp -rf ../testcases/$(TESTNAME).v run_test.v
+	cp -rf ../testcases/$(TESTNAME).sv run_test.sv
 	vlib work
 	vmap work work
 	vlog +cover=bcesft -f compile.f 
@@ -55,7 +55,7 @@ clean:
 	rm -rf *.wlf
 	rm -rf transcript
 	rm -rf *.ucdb
-	rm -rf run_test.v
+	rm -rf run_test.sv
 help:
 	@echo ""
 	@echo "****************************************"

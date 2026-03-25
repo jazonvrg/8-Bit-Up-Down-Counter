@@ -1,0 +1,51 @@
+set hls is
+set ic
+help
+help w
+:e ~/_vimrc
+r $VIMRUNTIME/vimrc_example.vim
+e ~/_vimrc
+set nocp
+e
+!ls
+s
+set tabstop = 3
+set tapstop=3
+wqa
+wwq
+q~
+wqwq
+:wq
+'<,'
+w!
+Uq
+i
+'<,'>wq
+Q
+vsp register.v
+vsp ../rtl/register.v
+sp ../../timer_advance_golden_model/tb/test_bench.v
+;wq
+Q!
+wq!
+sp ../../others/final/tb/test_bench.v
+'<,'>q!
+sp ../../final/tb/test_bench.v
+sp ../../../../bachtung_0801/
+sp 
+sp ../../../final/tb/test_bench.v
+sp ../../../timer_advance_golden_model/tb/test_bench.v
+sp ../../../others/final/tb/test_bench.v
+q!
+qw
+WQ;
+WQ
+'<,'>
+set tabstop=3
+set tabstop=4
+w;wq
+w
+q
+wq
+Wq
+

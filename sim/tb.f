@@ -1,1 +1,1 @@
-../tb/test_bench.v
+../tb/test_bench.sv

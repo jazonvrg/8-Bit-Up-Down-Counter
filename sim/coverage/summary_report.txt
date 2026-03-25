@@ -1,51 +1,13 @@
 Coverage Report Summary Data by instance
 
 =================================================================================
-=== Instance: /test_bench/top_dut/gen_adder_loop[3]/fa_dut
-=== Design Unit: work.full_adder
-=================================================================================
-    Enabled Coverage              Bins      Hits    Misses  Coverage
-    ----------------              ----      ----    ------  --------
-    Expressions                      6         6         0   100.00%
-    Statements                       2         2         0   100.00%
-    Toggles                         10        10         0   100.00%
-
-=================================================================================
-=== Instance: /test_bench/top_dut/gen_adder_loop[2]/fa_dut
-=== Design Unit: work.full_adder
-=================================================================================
-    Enabled Coverage              Bins      Hits    Misses  Coverage
-    ----------------              ----      ----    ------  --------
-    Expressions                      6         6         0   100.00%
-    Statements                       2         2         0   100.00%
-    Toggles                         10        10         0   100.00%
-
-=================================================================================
-=== Instance: /test_bench/top_dut/gen_adder_loop[1]/fa_dut
-=== Design Unit: work.full_adder
-=================================================================================
-    Enabled Coverage              Bins      Hits    Misses  Coverage
-    ----------------              ----      ----    ------  --------
-    Expressions                      6         6         0   100.00%
-    Statements                       2         2         0   100.00%
-    Toggles                         10        10         0   100.00%
-
-=================================================================================
-=== Instance: /test_bench/top_dut/gen_adder_loop[0]/fa_dut
-=== Design Unit: work.full_adder
-=================================================================================
-    Enabled Coverage              Bins      Hits    Misses  Coverage
-    ----------------              ----      ----    ------  --------
-    Expressions                      6         6         0   100.00%
-    Statements                       2         2         0   100.00%
-    Toggles                         10        10         0   100.00%
-
-=================================================================================
 === Instance: /test_bench/top_dut
-=== Design Unit: work.rca_4bit
+=== Design Unit: work.up_down_counter
 =================================================================================
     Enabled Coverage              Bins      Hits    Misses  Coverage
     ----------------              ----      ----    ------  --------
+    Branches                         4         4         0   100.00%
+    Statements                       6         6         0   100.00%
     Toggles                         38        38         0   100.00%
 
 =================================================================================
@@ -54,11 +16,11 @@ Coverage Report Summary Data by instance
 =================================================================================
     Enabled Coverage              Bins      Hits    Misses  Coverage
     ----------------              ----      ----    ------  --------
-    Branches                        10         5         5    50.00%
-    Conditions                       5         0         5     0.00%
-    Statements                      37        34         3    91.89%
-    Toggles                        284        49       235    17.25%
+    Branches                        12         8         4    66.66%
+    Conditions                       6         2         4    33.33%
+    Statements                      43        42         1    97.67%
+    Toggles                         86        23        63    26.74%
 
 
-Total Coverage By Instance (filtered view): 53.60%
+Total Coverage By Instance (filtered view): 63.87%
 
