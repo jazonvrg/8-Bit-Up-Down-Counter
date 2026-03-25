@@ -1,7 +1,7 @@
 m255
 K4
 z2
-Z0 !s12c _opt1
+Z0 !s12c _opt
 Z1 !s99 nomlopt
 R0
 R1
@@ -13,25 +13,17 @@ R0
 R1
 R0
 R1
-Z2 !s12c _opt
+Z2 !s12c _opt1
 R1
-R0
+R2
 R1
-R0
+R2
 R1
-R0
+R2
 R1
-R0
+R2
 R1
-R0
-R1
-R0
-R1
-R0
-R1
-R0
-R1
-R0
+R2
 R1
 R0
 R1
@@ -55,21 +47,41 @@ R2
 R1
 R2
 R1
-R2
+R0
 R1
-R2
+R0
 R1
-R2
+R0
 R1
-R2
+R0
 R1
-R2
+R0
 R1
-R2
+R0
 R1
-R2
+R0
 R1
-R2
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
 R1
 !s11f MIXED_VERSIONS
 13
@@ -80,10 +92,10 @@ R1
 cModel Technology
 Z3 d/ictc/student_data/vannghia_1108/projects/8_bit_up_down_counter/sim
 T_opt
-!s110 1774435545
-Vg`14I8_I18[cAXPT68?Zo1
+!s110 1774436384
+VMgeo>^k71TF6@9V597IS@1
 Z4 04 10 4 work test_bench fast 0
-=1-bc2411209e67-69c3bcd9-1b5e0-12096
+=1-bc2411209e67-69c3c020-102a5-16c85
 R1
 Z5 !s12f OEM100
 Z6 !s12b OEM100
@@ -93,7 +105,6 @@ o-quiet -auto_acc_if_foreign -work work -debugdb +access
 Z9 tCvgOpt 0
 n@_opt
 Z10 OL;O;2024.3;79
-R3
 T_opt1
 !s110 1774435605
 V_FQPOlPQNIF0LI<JemVW73
@@ -112,28 +123,28 @@ R3
 vtest_bench
 Z11 2../rtl/up_down_counter.sv|../tb/test_bench.sv
 Z12 DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
-Z13 !s110 1774435657
+Z13 !s110 1774436383
 !i10b 1
 !s100 biKF86a96`om70fLalV9A2
 IV>kUn5HC58iINj^[QOXDg1
 S1
 R3
-w1774435657
+w1774436382
 8../tb/test_bench.sv
 F../tb/test_bench.sv
 Frun_test.sv
-!i122 42
+!i122 48
 L0 1 82
 Z14 VDg1SIo80bB@j0V0VzS_@n1
 Z15 OL;L;2024.3;79
 r1
 !s85 0
 31
-Z16 !s108 1774435657.000000
-!s107 run_test.sv|../tb/test_bench.sv|../rtl/up_down_counter.sv|
-Z17 !s90 -f|compile.f|
+Z16 !s108 1774436383.000000
+Z17 !s107 run_test.sv|../tb/test_bench.sv|../rtl/up_down_counter.sv|
+Z18 !s90 -f|compile.f|
 !i113 0
-Z18 o-L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z19 o-L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
 R9
 vup_down_counter
 R11
@@ -147,7 +158,7 @@ R3
 w1774432322
 8../rtl/up_down_counter.sv
 F../rtl/up_down_counter.sv
-!i122 42
+!i122 48
 L0 1 28
 R14
 R15
@@ -155,8 +166,8 @@ r1
 !s85 0
 31
 R16
-Z19 !s107 run_test.sv|../tb/test_bench.sv|../rtl/up_down_counter.sv|
 R17
-!i113 0
 R18
+!i113 0
+R19
 R9

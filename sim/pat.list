@@ -1,6 +1,6 @@
 test_reset_behavior
 test_count_up
 test_count_down
-test_rollunder_up
+test_rollover_up
 test_rollunder_down
 test_toggle_direction
