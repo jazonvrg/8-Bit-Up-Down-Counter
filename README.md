@@ -43,6 +43,16 @@ The 8-bit Up/Down Counter is designed with the following port interfaces and fun
   <img src="./images/8-Bit-Up-Down-Counter.drawio.png" alt="8-bit Up/Down Counter Architecture">
 </p>
 
+**4. Module Descriptions:**
+
+To implement the sequential behavior shown above, the design is conceptually partitioned into two interacting logic blocks. While often coded within a single SystemVerilog module, the synthesis tool maps them to the following physical structures:
+* **Logic Block 1: Combinational Next-State Logic**
+    * **Role:** The "Arithmetic and Routing" brain of the counter. It determines what the *next* value should be based on the current count and the `up_down` direction signal.
+    * **Implementation:** Modeled using an `always_comb` block. It essentially infers a $+1$ Adder, a $-1$ Subtractor, and a 2-to-1 Multiplexer. If `up_down` is high, the Mux selects the Adder's path; if low, it selects the Subtractor's path. The output is a temporary wire (`prev_count` / `next_count`) that feeds directly into the state register.
+* **Logic Block 2: 8-Bit State Register (D Flip-Flops)**
+    * **Role:** The "Memory" of the counter. It safely stores the current count value and ensures that updates only happen synchronously with the system clock.
+    * **Implementation:** Modeled using an `always_ff @(posedge clk)` block. It infers eight parallel D Flip-Flops. On every positive clock edge, it captures the data from the Next-State Logic. It also integrates the active-low reset logic (`rst_n`); when pulled low, it overrides the clock and asynchronously/synchronously clears all 8 flip-flops to `0`.
+
 ### 🦉 The Process
 
 Transitioning from combinational to sequential logic required a major mindset shift. I upgraded my coding language from Verilog to **SystemVerilog**, utilizing `always_ff` for the state registers and `logic` data types to prevent multi-driver issues.
